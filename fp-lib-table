@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "usb-c_recepticle_LCSC-C165948_hand_solder")(type "KiCad")(uri "/home/vance/code/kicad/footprints/usb-c_recepticle_LCSC-C165948_hand_solder.pretty")(options "")(descr ""))
+  (lib (name "Power_Pads")(type "KiCad")(uri "${KIPRJMOD}/Power_Pads.pretty")(options "")(descr ""))
+)
