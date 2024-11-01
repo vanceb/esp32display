@@ -3359,6 +3359,16 @@
 		)
 		(uuid "f12ae230-6f2a-4a38-9287-b31b1343257c")
 	)
+	(text "I2C Pullup Resistors"
+		(exclude_from_sim no)
+		(at 148.082 160.782 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "07ea6f84-f9fa-4d63-90f5-250be2b9a759")
+	)
 	(global_label "G2"
 		(shape input)
 		(at 241.3 129.54 0)
@@ -3535,6 +3545,28 @@
 			)
 		)
 	)
+	(global_label "SDA"
+		(shape passive)
+		(at 142.24 179.07 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6eb7bc89-af4b-49f9-b2c1-ae4ded0420a4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 142.24 184.512 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "A"
 		(shape input)
 		(at 228.6 134.62 180)
@@ -3680,6 +3712,28 @@
 		(uuid "b3016535-eae4-49b9-ab76-aac8061147c3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 224.9774 64.6906 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCL"
+		(shape passive)
+		(at 153.67 179.07 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c4b2b4cd-6241-4b37-ab30-5a7d4fcd5a06")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 153.67 184.4515 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4844,6 +4898,72 @@
 			(project ""
 				(path "/59520591-5262-431c-b982-e87765ede04c"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 142.24 171.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "59baed71-ff9e-40aa-882b-d147ea5dd534")
+		(property "Reference" "#PWR030"
+			(at 142.24 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 142.24 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 142.24 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 142.24 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1134a780-d728-44d4-9726-17092a92dd96")
+		)
+		(instances
+			(project ""
+				(path "/59520591-5262-431c-b982-e87765ede04c"
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -6357,6 +6477,212 @@
 			(project ""
 				(path "/59520591-5262-431c-b982-e87765ede04c"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 153.67 175.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "da10f01e-663b-4036-9288-e1707bb1e5f5")
+		(property "Reference" "R8"
+			(at 156.21 173.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4K7"
+			(at 156.21 176.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 151.892 175.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 153.67 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8dd0f686-dbcf-4dfc-aadb-6d929d7b5dbf")
+		)
+		(pin "1"
+			(uuid "12147a01-cb7b-410d-a689-176f93d00fea")
+		)
+		(instances
+			(project "esp32display"
+				(path "/59520591-5262-431c-b982-e87765ede04c"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 142.24 175.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e1f3b5ed-e62a-4e8b-a8c6-09e4ba2dde2a")
+		(property "Reference" "R7"
+			(at 144.78 173.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4K7"
+			(at 144.78 176.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 140.462 175.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 142.24 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c3b963eb-c0b0-4d1b-ba82-552edd2a02ae")
+		)
+		(pin "1"
+			(uuid "42c89a6e-680d-4920-8897-be02b0fbe1e4")
+		)
+		(instances
+			(project ""
+				(path "/59520591-5262-431c-b982-e87765ede04c"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 153.67 171.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e3fb9406-4a33-4fe3-a05a-470bb9f645e2")
+		(property "Reference" "#PWR031"
+			(at 153.67 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 153.67 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 153.67 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 153.67 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bc7ac08a-0eae-441a-85ef-7ff2f52ee86b")
+		)
+		(instances
+			(project "esp32display"
+				(path "/59520591-5262-431c-b982-e87765ede04c"
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
