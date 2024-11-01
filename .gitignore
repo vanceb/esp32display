@@ -29,3 +29,8 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+bom
+
+# Exported Gerbers
+production
+fabrication-toolkit-options.json
